@@ -1,10 +1,10 @@
-LABact - Laravel Auth Dashboard
+LABact - Laravel Auth Dashboard: 
 
 This laboratory assignment involves creating a Laravel-based authentication dashboard using Laravel migrations, factories, seeders, Breeze authentication, routing, and a Bootstrap-based dashboard.
 
 ------------------------------------------------------------------------------
 
-Requirements
+Requirements:
 
 PHP 8.2 or higher
 
@@ -16,7 +16,7 @@ XAMPP (MySQL)
 
 ------------------------------------------------------------------------------
 
-Setup Instructions
+Setup Instructions:
 
 Start Apache and MySQL in XAMPP.
 
@@ -34,7 +34,7 @@ Serve the application using php artisan serve.
 
 ------------------------------------------------------------------------------
 
-Functional Requirements
+Functional Requirements:
 
 Users can log in using seeded user data.
 
@@ -48,7 +48,7 @@ Dashboard uses a frontend template via Vite with Bootstrap.
 
 ------------------------------------------------------------------------------
 
-Sample Login Credentials (Seeded)
+Sample Login Credentials (Seeded):
 
 Email: student1@example.com
 
