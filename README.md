@@ -1,66 +1,59 @@
-<<<<<<< HEAD
+LABact - Laravel Auth Dashboard: 
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+This laboratory assignment involves creating a Laravel-based authentication dashboard using Laravel migrations, factories, seeders, Breeze authentication, routing, and a Bootstrap-based dashboard.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+------------------------------------------------------------------------------
 
-## About Laravel
+Requirements:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+PHP 8.2 or higher
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Composer
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Node.js with npm
 
-## Learning Laravel
+XAMPP (MySQL)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+------------------------------------------------------------------------------
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Setup Instructions:
 
-## Laravel Sponsors
+Start Apache and MySQL in XAMPP.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Create a MySQL database named labact using phpMyAdmin.
 
-### Premium Partners
+Copy .env.example to .env and make sure the database settings match your XAMPP MySQL configuration.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Install PHP dependencies by running composer install.
 
-## Contributing
+Install frontend dependencies and build assets by running npm install followed by npm run build.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Run migrations and seeders by executing php artisan migrate --seed.
 
-## Code of Conduct
+Serve the application using php artisan serve.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+------------------------------------------------------------------------------
 
-## Security Vulnerabilities
+Functional Requirements:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Users can log in using seeded user data.
 
-## License
+Users can register a new account.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Users can log out successfully.
 
-# LaravelWebApp
+Users are redirected to /dashboard after login.
 
-laravel web application
-98d64ba07f01bd82907e63aad72f3aada9be6621
+Dashboard uses a frontend template via Vite with Bootstrap.
+
+------------------------------------------------------------------------------
+
+Sample Login Credentials (Seeded):
+
+Email: admin@example.com
+
+Username: admin
+
+Password: admin123
+
+The seeder creates a total of 100 users. All factory-generated users share the same password above.
