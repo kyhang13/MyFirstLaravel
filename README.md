@@ -1,79 +1,51 @@
-LABact – Laravel Auth Dashboard Laboratory Assignment
+LABact - Laravel Auth Dashboard
 
-Description:
-Implementation of a Laravel-based authentication dashboard using:
-
-Laravel migrations, factories, and seeders
-
-Breeze authentication
-
-Routing
-
-Bootstrap-based dashboard with Vite
+This laboratory assignment involves creating a Laravel-based authentication dashboard using Laravel migrations, factories, seeders, Breeze authentication, routing, and a Bootstrap-based dashboard.
 
 Requirements
 
-PHP: 8.2 or higher
+PHP 8.2 or higher
 
 Composer
 
-Node.js + npm
+Node.js with npm
 
-XAMPP (for MySQL)
+XAMPP (MySQL)
 
 Setup Instructions
 
-Start XAMPP:
+Start Apache and MySQL in XAMPP.
 
-Launch Apache and MySQL services.
+Create a MySQL database named labact using phpMyAdmin.
 
-Create Database:
+Copy .env.example to .env and make sure the database settings match your XAMPP MySQL configuration.
 
-Open phpMyAdmin
+Install PHP dependencies by running composer install.
 
-Create a database named: labact
+Install frontend dependencies and build assets by running npm install followed by npm run build.
 
-Configure Environment:
+Run migrations and seeders by executing php artisan migrate --seed.
 
-Copy .env.example to .env
-
-Update DB settings in .env to match your XAMPP MySQL configuration
-
-Install PHP dependencies:
-
-composer install
-
-
-Install frontend dependencies and build assets:
-
-npm install
-npm run build
-
-
-Run migrations and seeders:
-
-php artisan migrate --seed
-
-
-Serve the application:
-
-php artisan serve
+Serve the application using php artisan serve.
 
 Functional Requirements
 
-Users can log in using seeded user data
+Users can log in using seeded user data.
 
-Users can register a new account
+Users can register a new account.
 
-Users can log out successfully
+Users can log out successfully.
 
-Users are redirected to /dashboard after login
+Users are redirected to /dashboard after login.
 
-Dashboard uses a Bootstrap frontend template via Vite
+Dashboard uses a frontend template via Vite with Bootstrap.
 
 Sample Login Credentials (Seeded)
-Field	Value
-Email	admin@example.com
 
-Username	admin
-Password	admin123
+Email: student1@example.com
+
+Username: student1
+
+Password: Password123!
+
+The seeder creates a total of 100 users. All factory-generated users share the same password above.
