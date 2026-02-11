@@ -50,10 +50,10 @@ Dashboard uses a frontend template via Vite with Bootstrap.
 
 Sample Login Credentials (Seeded):
 
-Email: student1@example.com
+Email: admin@example.com
 
-Username: student1
+Username: admin
 
-Password: Password123!
+Password: admin123
 
 The seeder creates a total of 100 users. All factory-generated users share the same password above.
